@@ -1,0 +1,263 @@
+.section
+{
+    position: absolute;
+    left: 0;
+    top: 344vh;
+    width: 100%;
+    scroll-margin-top: 15vh;
+    height: 85vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #F5EBE0;
+}
+
+.section .portfolio-header
+{
+width: 100%;
+height: 7rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.1rem;
+font-family: "Poppins", sans-serif;
+
+}
+
+.section .portfolio-header p
+{
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+.section .portfolio-header h1
+{
+    font-weight: 600;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+.section .portfolio-header h1::after
+{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%) ;
+    bottom: -5px; 
+    background-color: #28A725;
+}
+
+.project-container
+{
+    width: 100%;
+    padding: 0;
+    height: 69vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-color: rgb(163, 163, 163);
+
+}
+
+
+.portfolio-container
+{
+    width: 22rem;
+    border-radius: 2rem;
+    border: 1px solid rgb(163, 163, 163);
+    /* background: rgb(250, 250, 250); */
+    backdrop-filter: blur(100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 40px  rgba(0, 0, 0, 0.28);
+
+}
+
+.portfolio-container .img-container
+{
+    border-radius: 1.5rem;
+    border: 1px solid  rgb(163, 163, 163);
+    box-shadow: 0 0 20px  rgba(0, 0, 0, 0.28);
+    width: 18rem;
+    height: 15rem;
+    overflow: hidden;
+    margin:2rem auto;
+
+}
+
+.project-img
+{
+width: 100%;
+height: 100%;
+object-fit:cover;
+}
+
+.btn-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.75rem auto;
+    text-align: center;
+
+
+}
+
+.btn-container .btn
+{
+    width: 7rem;
+
+    color: black;
+    border-radius: 2rem;
+    padding: 0.5rem 0;
+    border: 1px solid #6C757D;
+    font-weight: 500;
+}
+
+.btn-container .btn:hover , .btn-container .btn:active
+{
+
+    background-color:rgba(255, 255, 240, 0.233);
+    outline: none;
+    cursor: pointer;
+     background-color: ivory;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .project-container {
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .portfolio-container {
+        width: 20rem;
+    }
+
+    .portfolio-container .img-container {
+        width: 16rem;
+        height: 13rem;
+    }
+
+    .section .portfolio-header h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    
+    .section
+    {
+        margin-top: 20.5rem;
+    }
+
+
+    .project-container {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .portfolio-container {
+        width: 60%;
+    }
+
+    .portfolio-container .img-container {
+        width: 90%;
+        height: 12rem;
+    }
+
+    .section .portfolio-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .section .portfolio-header p {
+        font-size: 0.7rem;
+    }
+
+    .btn-container .btn {
+        width: 6rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .section{
+        margin-top: 31rem;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        height: auto;
+    }
+
+    .portfolio-container {
+        width: 90%;
+    }
+
+    .portfolio-container .img-container {
+        width: 95%;
+        height: 10rem;
+    }
+
+    .section .portfolio-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .section .portfolio-header p {
+        font-size: 0.6rem;
+    }
+
+    .btn-container .btn {
+        width: 5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 425px)
+{
+    .section {
+        margin-top: 42rem;
+    }
+}
+@media (max-width: 400px)
+{
+    .section {
+        margin-top: 45rem;
+    }
+}
+@media (max-width: 370px)
+{
+    .section {
+        margin-top: 55rem;
+    }
+}
+@media (max-width: 330px)
+{
+    .section {
+        margin-top: 60rem;
+    }
+}
+@media (max-width: 320px)
+{
+    .section {
+        margin-top: 68rem;
+    }
+}
+@media (max-width: 313px)
+{
+    .section {
+        margin-top: 72rem;
+    }
+}

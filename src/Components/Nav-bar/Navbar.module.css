@@ -1,0 +1,162 @@
+
+
+.header
+{
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 15vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600; 
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1f1f1f 0%, #2c2c2c 100%);
+    backdrop-filter: blur(10px); 
+
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1440px;
+}
+
+.container .nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .logo
+{
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0 0, 0.489);
+    cursor: default;
+}
+
+.nav-link
+{
+    display: flex;
+    gap: 2rem;
+    font-weight: 300;
+    justify-content: space-around;
+    list-style: none;  
+}
+
+.nav-link a
+{
+    text-decoration: none;
+    color: #ffffff;    
+    transition: all 300ms linear;
+    font-weight: 400; 
+  letter-spacing: 1px; 
+}
+
+.nav-link a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    width: 0%;
+    height: 2px;
+    background-color: black ;
+    transition: width 700ms ease, background-color 700ms linear;
+}
+
+.nav-link a.active::after  {
+    width: 100%;
+    background-color: rgb(181, 181, 181);
+}
+
+.nav-link a.active
+{
+    color: green ;
+}
+
+ .nav-link a:hover 
+ {  
+     color: #28A725 ;
+    text-decoration-color: rgb(181, 181, 181); 
+}
+
+
+.content h2
+{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4rem;
+}
+
+.icon
+{
+    cursor: pointer;
+    display: none ;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px)
+{
+
+    .icon
+    {
+     transition: all 0.3s ease-out;   
+     display: block;  
+    }
+
+   .icon  .visible
+    {   
+        opacity: 1;
+        transform: rotate(0deg);
+        transition: opacity 0.2s ease, transform 0.3s ease;
+    }
+    .icon .hidden
+    {
+        opacity: 0;
+        transform: rotate(90deg); 
+        transition: opacity 0.2s ease, transform 0.3s ease;
+        position: absolute; 
+        left: 0;
+        top: 0;
+    }
+
+    .container .nav-link
+    {
+        flex-direction: column ;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        position: absolute;
+        width: 150px;
+        height: 85vh;
+        top:10vh;
+        right: -200px;
+        z-index: 1001;
+        /* background-color: #023047; */
+        background: linear-gradient(315deg, #1f1f1f 0%, #2c2c2c 100%);
+        backdrop-filter: blur(10px); 
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+    }
+
+    .nav-link a::after{
+        content: none;
+    }
+
+    .nav-link a:hover, .nav-link a:active 
+    {
+        color: green;
+    }
+    
+    .container .nav-link.activer
+    {   
+        right: 0px;
+        transition: all 0.7s ease-out;
+    }
+    .container .nav
+    {
+        justify-content: space-around;
+    }
+}
