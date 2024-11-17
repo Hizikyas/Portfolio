@@ -1,0 +1,305 @@
+.section
+{
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    height: 85vh;
+    width: 100%;
+    scroll-margin-top: 15vh;
+    padding: 0 48px;
+    background-color: #EDEDE9;
+}
+
+.know-me
+{
+    height: 10.725rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #212529;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.know-me  p::after
+{
+content: "";
+width: 30%;
+position: absolute;
+bottom: -5px;
+left: 50%;
+transform: translateX(-50%);
+height: 2px;
+background-color: #28A725;
+
+}
+
+.section-container
+{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    margin-top: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ---------------------------paragraph------------------- */
+
+.paragraph-container
+{
+    width: 70%;
+}
+
+.title-change
+{
+    color: #28A725;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.paragraph-container h2
+{
+    padding: 0 0 1rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.paragraph-1 , .paragraph-2
+{
+    margin: 0 0 1rem;
+    color: #4C4D4D;
+}
+
+/* ---------------------------digital------------------- */
+
+.digital-container
+{
+    width: 30%;
+    padding-left: 4rem;
+}
+
+.digital-container ul
+{
+    list-style: none;
+    color: #4C4D4D ;
+    margin-bottom: 2rem;
+}
+.digital-container ul li
+{
+    padding: 0.75rem 0 ;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.digital-container ul li span
+{
+padding: 0 0.5rem 0 0;
+font-weight: 600;
+}
+
+.digital-container ul li a
+{
+    text-decoration: none;
+    color: green;
+}
+
+.digital-container ul li a:focus , .digital-container ul li a:hover
+{
+  color: #28a745;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.action 
+{
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.action button
+{
+    font-family: "Poppins", sans-serif;
+    background-color: ivory;
+    color: #6C757D;
+    width: 10rem;
+    border-radius: 2rem;
+    padding: 0.5rem 0;
+    border: 1px solid #6C757D;
+}
+
+.action span
+{
+    margin-left: 1rem;
+}
+.action button:hover , .action button:active
+{
+    color: ivory;
+    background-color:#6c757d7b;
+    transition: all 0.7s ease-out;
+    outline: none;
+    
+}
+
+
+/* --- Media Queries--- */
+
+
+@media (max-width: 1200px) {
+
+    .section
+    {
+        height: 100vh;
+    }
+    
+    .section-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .know-me
+    {
+       height: 6rem;
+    }
+
+    .paragraph-container {
+        width: 100%;
+    }
+    
+    .digital-container {
+        width: 100%;
+        padding-left: 0;
+    }
+    .action button
+    {
+        width: 10rem;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 944px)
+{
+    .section
+    {
+        height: 105vh;
+    }
+}
+@media (max-width: 685px)
+{
+    .section
+    {
+        height: 108vh;
+    }
+}
+@media (max-width: 768px) {
+    .section-container {
+        gap: 2rem;
+
+    }
+
+    .know-me {
+        font-size: 1.75rem;
+        height: auto;
+    }
+
+    .paragraph-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .paragraph-1, .paragraph-2 {
+        font-size: 1rem;
+    }
+
+    .digital-container {
+        padding-left: 2rem;
+    }
+
+    .action button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section
+    {
+        height: 111vh;
+    }
+    
+    .know-me {
+        font-size: 1.3rem;
+        text-align: center;
+        height: 3rem;
+    }
+
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .paragraph-container, .digital-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .paragraph-container h2 {
+        font-size: 1.25rem;
+    }
+
+    .paragraph-1, .paragraph-2 {
+        font-size: 0.875rem;
+    }
+
+    .action button {
+        width: 70%;
+        padding: 10px 0;
+
+    }
+}
+
+@media (max-width: 425px)
+{
+    .section
+    {
+        height: 127vh;
+    }
+}
+@media (max-width: 400px)
+{
+    .section
+    {
+        height: 130vh;
+    }
+}
+@media (max-width: 370px)
+{
+    .section
+    {
+        height: 138vh;
+    }
+}
+@media (max-width: 330px)
+{
+    .section
+    {
+        height: 143vh;
+    }
+}
+@media (max-width: 320px)
+{
+    .section
+    {
+        height: 155vh;
+    }
+}
+@media (max-width: 313px)
+{
+    .section
+    {
+        height: 160vh;
+    }
+}

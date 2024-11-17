@@ -1,0 +1,405 @@
+.section
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 185vh;
+    height: 85vh;
+    width:90% ;
+    scroll-margin-top: 15vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.header-line
+{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.header-line p
+{
+font-size: 2.25rem;
+font-weight: 600;
+color: #212529;
+}
+
+.header-line p::after
+{
+    content: "";
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    background-color: #28A725;
+}
+
+.containers-title
+{
+color:#252B33 ;
+font-weight: 600;
+text-align: center;
+}
+
+.resume-container
+{
+    display: flex;
+    gap :10rem ;
+}
+
+.resume-container > *
+{
+    flex: 1 ;
+}
+
+.computer-container h3, .web-development-container h3, 
+.computer-experiance h3 , .web-development-experiance h3
+{
+    font-weight: 400;
+    margin: 0 0 0.5rem;
+    color: #252B33;
+   
+}
+
+.computer-container .light-title, .web-development-container .light-title, 
+.computer-experiance .light-title, .web-development-experiance .light-title
+
+{
+font-weight: 280;
+margin: 0 0 1rem;
+color: #DC3545;
+}
+
+/* -----------------------referense--------------- */
+
+.referense-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+.web-development-container .light-title
+{
+    display: inline;
+}
+.web-development-container .torefer
+{
+    padding-right: 1rem;
+    font-size: 0.75rem ;
+    color:#212529;
+}
+.web-development-container .torefer:hover
+{
+    color:#28A725 ;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.web-development-container span
+{
+    display: inline;
+}
+/* -----------------------referense--------------- */
+
+.my-education-container .tired , .myexperiance-container .tired
+{
+    color: #4C4D4D;
+    font-weight: 300;
+}
+.web-development-container span
+{
+    display: inline-block;
+}
+
+.computer-container , .web-development-container , 
+.computer-experiance , .web-development-experiance
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 0.75remrem;
+    border: 1px solid  #D3D3D3;
+    border-radius: 5px;
+    padding: 1rem;
+    word-wrap: break-word;
+}
+
+/* .computer-container > * , 
+{
+    flex: 1;
+} */
+
+
+
+
+/* ------------------------skill-container ---------------------- */
+.skill-title
+{
+    margin: 3rem  0rem  2rem  0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-title h3
+{
+
+    color:#252B33 ;
+    font-weight: 600;
+    font-size: 1.75rem;
+    
+}
+
+.my-skill-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-skill-container .col-1, .my-skill-container .col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.item .skill-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 350;
+    font-size: 1rem;
+    width: 100%;
+    position: relative;
+}
+
+.badge {
+    padding-right: 1rem;
+    text-align: center;
+}
+
+
+.skill-text span:first-child {
+    flex-grow: 0;
+    margin-right: 10rem;  
+}
+
+.skill-text span:last-child {
+    flex-shrink: 0;
+    margin-left: 0;
+    text-align: right;
+    min-width: 50px;
+}
+
+
+.skill-progress {
+    margin: 0.4rem 0;
+    border-radius: 10px;
+    height: 0.3rem;
+    width: 100%;
+    background-color: #E9ECEF;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.skill-progress-bar {
+    background-color: #28A725;
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+
+.skill-progress-bar.w-90 {
+    width: 90%;
+}
+.skill-progress-bar.w-95 {
+    width: 95%;
+}
+.skill-progress-bar.w-40 {
+    width: 40%;
+}
+.skill-progress-bar.w-96 {
+    width: 96%;
+}
+.skill-progress-bar.w-85 {
+    width: 85%;
+}
+.skill-progress-bar.w-60 {
+    width: 60%;
+}
+
+/* -----------------Media quires========= */
+
+@media (max-width: 1200px) {
+    .header-line
+{
+    height: 100px;
+}
+    .section {
+     margin-top: 15vh;   
+     height: 130vh;
+    }
+  
+    .resume-container {
+      gap: 5rem;
+    }
+  
+  }
+
+
+@media (max-width: 944px)
+{
+    .section
+    {
+        margin-top: 7rem;
+    }
+}
+  @media (max-width: 768px) {
+
+    .header-line
+    {
+        height: 100px;
+    }
+
+    .section
+    {
+        margin-top: 7rem;
+    }
+    .header-line p {
+      font-size: 1.75rem;
+    }
+  
+    .resume-container {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  
+    .computer-container, .web-development-container, 
+    .computer-experiance, .web-development-experiance {
+      margin-top: 0.5rem;
+      padding: 1rem;
+    }
+  
+    .my-skill-container {
+      gap: 1.5rem;
+    }
+  
+    .item {
+      gap: 0.5rem;
+    }
+  
+    .skill-text {
+      font-size: 0.85rem;
+    }
+  
+    .skill-progress {
+      height: 0.2rem;
+    }
+  }
+  @media (max-width: 685px)
+  {
+      .section
+      {
+          margin-top: 9rem;
+      }
+  }
+  @media (max-width: 480px) {
+
+    .section {
+       margin-top: 11rem;
+    } 
+    .header-line
+    {
+        height: 65px;
+    }
+  
+    .header-line p {
+      font-size: 1.5rem;
+    }
+  
+    .resume-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .computer-container, .web-development-container, 
+    .computer-experiance, .web-development-experiance {
+      margin-top: 0.25rem;
+      padding: 0.75rem;
+    }
+  
+    .skill-title h3 {
+      font-size: 1.5rem;
+    }
+  
+    .my-skill-container {
+      flex-direction: column;      
+      gap: 0.5rem;
+    }
+  
+    .skill-text {
+      font-size: 0.75rem;
+    }
+  
+    .skill-progress {
+      height: 0.15rem;
+    }
+  
+    .badge {
+      padding-right: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 425px)
+  {
+    .section {
+        margin-top: 19rem;
+     } 
+  }
+  @media (max-width: 400px)
+  {
+    .section {
+        margin-top: 20rem;
+     } 
+  }
+  @media (max-width: 370px)
+  {
+    .section {
+        margin-top: 23rem;
+     } 
+  }
+  @media (max-width: 330px)
+  {
+    .section {
+        margin-top: 25rem;
+     } 
+  }
+
+  @media (max-width: 320px)
+  {
+    .section {
+        margin-top: 31rem;
+     } 
+  }
+  @media (max-width: 313px)
+  {
+    .section {
+        margin-top: 34rem;
+     } 
+  }
