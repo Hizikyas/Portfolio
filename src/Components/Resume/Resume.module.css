@@ -231,17 +231,20 @@ color: #DC3545;
 .skill-progress-bar.w-95 {
     width: 95%;
 }
-.skill-progress-bar.w-40 {
-    width: 40%;
-}
 .skill-progress-bar.w-96 {
     width: 96%;
 }
 .skill-progress-bar.w-85 {
     width: 85%;
 }
+.skill-progress-bar.w-80 {
+    width: 80%;
+}
 .skill-progress-bar.w-60 {
     width: 60%;
+}
+.skill-progress-bar.w-70 {
+    width: 70%;
 }
 
 /* -----------------Media quires========= */

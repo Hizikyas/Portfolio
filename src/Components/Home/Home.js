@@ -14,7 +14,7 @@ const AboutMe = props => {
         <div className={classes["section-text"]}>
           <p className={classes["section-text__p1"]}>Hello, I'm</p>
           <h1 className={classes.title}>Hizikyas Tamiru</h1>
-          <p className={classes["section-text__p2"]}>Frontend Developer</p>
+          <p className={classes["section-text__p2"]}>MERN Developer</p>
           <div className={classes["button-container"]}>
             <button
               className={`${classes.btn} ${classes["btn-color-2"]}`}
