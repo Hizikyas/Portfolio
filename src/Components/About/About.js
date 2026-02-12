@@ -1,6 +1,5 @@
 
 import classes from "./About.module.css";
-// import CV from "../../store/Resume.pdf" ;
 import certificate from "../../store/Hizikyas Tamiru.pdf";
 import { FaDownload } from "react-icons/fa6";
 
