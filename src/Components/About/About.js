@@ -13,8 +13,8 @@ const About = () => {
       <div className={classes["section-container"]}>
           <div className={classes["paragraph-container"]}>
               <h2>I'm <span className={classes["title-change"]}>Hizikyas Tamiru,</span> a MERN Developer</h2>
-              <p className={classes["paragraph-1"]}>With over two years of hands-on experience in full-stack development, I specialize in building scalable web applications using MongoDB, Express.js, React, and Node.js. My goal is to deliver robust and maintainable solutions that offer seamless user experiences across devices.</p>
-              <p className={classes["paragraph-2"]}>I thrive in tackling complex problems and turning ideas into functional products. From creating dynamic user interfaces to managing backend APIs, I take pride in delivering efficient, modern applications that align with business goals and user needs.</p>
+              <p className={classes["paragraph-1"]}>With over three years of hands-on experience as a full-stack developer, I specialize in building scalable web applications across diverse technologies and environments. My goal is to deliver robust, maintainable solutions that provide seamless user experiences across devices.</p>
+              <p className={classes["paragraph-2"]}>I enjoy tackling complex problems and turning ideas into functional products. From crafting dynamic user interfaces to developing efficient backend systems, I focus on building modern applications that align with business goals and user needs.</p>
           </div>
 
         <div className={classes["digital-container"]}>
