@@ -162,67 +162,7 @@
 
 /* ================= RESPONSIVE ================= */
 
-/* TABLET */
-@media (max-width: 1024px) {
-    .portfolio-container {
-        min-width: 20rem;
-    }
-
-    .portfolio-container .img-container {
-        width: 16rem;
-        height: 13rem;
-    }
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .portfolio-container {
-        min-width: 80%;
-    }
-
-    .portfolio-container .img-container {
-        width: 90%;
-        height: 12rem;
-    }
-
-    .section .portfolio-header h1 {
-        font-size: 1.8rem;
-    }
-
-    .section .portfolio-header p {
-        font-size: 0.7rem;
-    }
-
-    .btn-container .btn {
-        width: 6rem;
-    }
-}
-
-/* SMALL MOBILE */
-@media (max-width: 480px) {
-    .portfolio-container {
-        min-width: 90%;
-    }
-
-    .portfolio-container .img-container {
-        height: 10rem;
-    }
-
-    .section .portfolio-header h1 {
-        font-size: 1.5rem;
-    }
-
-    .section .portfolio-header p {
-        font-size: 0.6rem;
-    }
-
-    .btn-container .btn {
-        width: 5rem;
-        font-size: 0.8rem;
-    }
-}
-
-/* @media (max-width: 425px)
+@media (max-width: 425px)
 {
     .section {
         margin-top: 42rem;
@@ -258,4 +198,4 @@
         margin-top: 72rem;
     }
 }
- */
+
