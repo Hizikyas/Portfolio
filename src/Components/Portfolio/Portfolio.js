@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import classes from "./portfolio.module.css";
 import project1 from "../../store/project1.png";
 import project2 from "../../store/project2.png"
@@ -41,9 +41,10 @@ const Portfolio = () => {
     },
   ];
 
-   const projectContainerRef = useRef(null);
+  const projectContainerRef = useRef(null);
   const projectCardRefs = useRef([]);
 
+  // Keep the scroll function but remove the setActiveIndex part
   const handleScroll = () => {
     const container = projectContainerRef.current;
     if (!container || !projectCardRefs.current.length) return;
@@ -63,10 +64,9 @@ const Portfolio = () => {
       }
     });
 
-    setActiveIndex(nearestIndex);
+    // Just log it or do nothing - no state update needed
+    console.log("Currently viewing project index:", nearestIndex);
   };
-
-
 
   return (
     <section id="Portfolio" className={classes.section}>
@@ -114,7 +114,6 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-
     </section>
   );
 };
