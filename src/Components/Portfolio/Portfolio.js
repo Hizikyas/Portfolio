@@ -126,17 +126,6 @@ const Portfolio = () => {
         ))}
       </div>
 
-      <div className={classes["dot-container"]}>
-        {projects.map((project, index) => (
-          <button
-            key={`${project.title}-dot`}
-            type="button"
-            className={`${classes.dot} ${activeIndex === index ? classes["dot-active"] : ""}`}
-            aria-label={`Go to ${project.title}`}
-            onClick={() => scrollToProject(index)}
-          />
-        ))}
-      </div>
     </section>
   );
 };
