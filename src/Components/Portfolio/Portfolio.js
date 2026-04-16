@@ -4,6 +4,7 @@ import project1 from "../../store/project1.png";
 import project2 from "../../store/project2.png"
 import project3 from "../../store/project3.png"
 import Profile4 from "../../store/Profile4.png"
+import Profile5 from "../../store/Profile5.png"
 
 const Portfolio = () => {
   return (
@@ -34,16 +35,16 @@ const Portfolio = () => {
         <div className={classes["portfolio-container"]}>
           <div className={classes["img-container"]}>
             <img
-              src={project3}
+              src={Profile5}
               alt="project-3"
               className={classes["project-img"]}
             />
           </div>
 
-          <p className={classes["project-title"]}>Blog</p>
+          <p className={classes["project-title"]}>Deutsche Hochschule für Medizin College</p>
 
           <div className={classes["btn-container"]}>
-            <button className={classes.btn} onClick={() => window.open("https://blog-api-two-khaki.vercel.app/" , "_blank")}>Live Demo</button>
+            <button className={classes.btn} onClick={() => window.open("https://xn--deutsche-hochschule-fr-medizin-college-17d.tech/" , "_blank")}>Live Demo</button>
           </div>
         </div>
 
@@ -82,6 +83,22 @@ const Portfolio = () => {
               Github
             </button> */}
             <button className={classes.btn} onClick={() => window.open("https://foodhub-sable.vercel.app/" , "_blank")}>Live Demo</button>
+          </div>
+        </div>
+        
+        <div className={classes["portfolio-container"]}>
+          <div className={classes["img-container"]}>
+            <img
+              src={project3}
+              alt="project-3"
+              className={classes["project-img"]}
+            />
+          </div>
+
+          <p className={classes["project-title"]}>Blog</p>
+
+          <div className={classes["btn-container"]}>
+            <button className={classes.btn} onClick={() => window.open("https://blog-api-two-khaki.vercel.app/" , "_blank")}>Live Demo</button>
           </div>
         </div>
 
