@@ -12,7 +12,7 @@ const About = () => {
 
       <div className={classes["section-container"]}>
           <div className={classes["paragraph-container"]}>
-              <h2>I'm <span className={classes["title-change"]}>Hizikyas Tamiru,</span> a MERN Developer</h2>
+              <h2>I'm <span className={classes["title-change"]}>Hizikyas Tamiru,</span> a Full Stack Developer</h2>
               <p className={classes["paragraph-1"]}>With over three years of hands-on experience as a full-stack developer, I specialize in building scalable web applications across diverse technologies and environments. My goal is to deliver robust, maintainable solutions that provide seamless user experiences across devices.</p>
               <p className={classes["paragraph-2"]}>I enjoy tackling complex problems and turning ideas into functional products. From crafting dynamic user interfaces to developing efficient backend systems, I focus on building modern applications that align with business goals and user needs.</p>
           </div>

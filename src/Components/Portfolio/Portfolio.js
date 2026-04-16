@@ -3,6 +3,7 @@ import classes from "./portfolio.module.css";
 import project1 from "../../store/project1.png";
 import project2 from "../../store/project2.png"
 import project3 from "../../store/project3.png"
+import Profile4 from "../../store/Profile4.png"
 
 const Portfolio = () => {
   return (
@@ -13,6 +14,22 @@ const Portfolio = () => {
       </div>
 
       <div className={classes["project-container"]}>
+
+        <div className={classes["portfolio-container"]}>
+          <div className={classes["img-container"]}>
+            <img
+              src={Profile4}
+              alt="project-3"
+              className={classes["project-img"]}
+            />
+          </div>
+
+          <p className={classes["project-title"]}>Klyra (Chat System Web App)</p>
+
+          <div className={classes["btn-container"]}>
+            <button className={classes.btn} onClick={() => window.open("https://klyra-inky.vercel.app/" , "_blank")}>Live Demo</button>
+          </div>
+        </div>
 
         <div className={classes["portfolio-container"]}>
           <div className={classes["img-container"]}>
