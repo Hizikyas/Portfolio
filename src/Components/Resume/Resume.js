@@ -44,18 +44,18 @@ const Resume = () => {
         <div className={classes["myexperiance-container"]}>
           <h2 className={classes["containers-title"]}>My Experiance</h2>
           <div className={classes["computer-experiance"]}>
-<h3>Ethio Post Office (Internship)</h3>
-<p className={classes["light-title"]}>MERN Developer | April – June 2025</p>
-<p className={classes.tired}>
-  Built a Property Management System using the MERN stack, focusing on API development, database design, and responsive UI for a smooth user experience.
-</p>
+            <h3>Ethio Post Office (Internship)</h3>
+            <p className={classes["light-title"]}>MERN Developer | April – June 2025</p>
+            <p className={classes.tired}>
+            Built a Property Management System using the MERN stack, focusing on API development, database design, and responsive UI for a smooth user experience.
+            </p>
 
           </div>
           <div className={classes["web-development-experiance"]}>
-              <h3>Freelance</h3>
-              <p className={classes["light-title"]}>MERN Stack Developer</p>
+              <h3>Deutsche Hochschule für Medizin College</h3>
+              <p className={classes["light-title"]}>Frontend Developer | September - December 2025</p>
               <p className={classes.tired}>
-                Currently working as a freelance MERN developer, building full-stack web applications with React, Node.js, Express, and MongoDB. Focused on creating responsive interfaces and efficient backend systems.
+                Currently contributing to a live student management system as a frontend developer, collaborating in a team to build and maintain a role-based platform used in a real college environment.
               </p>
 
           </div>
