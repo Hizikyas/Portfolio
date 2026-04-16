@@ -41,8 +41,7 @@ const Portfolio = () => {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0);
-  const projectContainerRef = useRef(null);
+   const projectContainerRef = useRef(null);
   const projectCardRefs = useRef([]);
 
   const handleScroll = () => {
@@ -67,17 +66,7 @@ const Portfolio = () => {
     setActiveIndex(nearestIndex);
   };
 
-  const scrollToProject = (index) => {
-    const container = projectContainerRef.current;
-    const card = projectCardRefs.current[index];
-    if (!container || !card) return;
 
-    container.scrollTo({
-      left: card.offsetLeft,
-      behavior: "smooth",
-    });
-    setActiveIndex(index);
-  };
 
   return (
     <section id="Portfolio" className={classes.section}>
