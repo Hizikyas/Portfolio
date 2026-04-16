@@ -90,7 +90,7 @@ const Resume = () => {
     </div>
     <div className={classes.dre}>
         <div className={classes["skill-text"]}>
-            <span>MongoDB</span>
+            <span>Go</span>
             <span className={classes["w-85"]}>85%</span>
         </div>
         <div className={classes["skill-progress"]}>
@@ -106,7 +106,7 @@ const Resume = () => {
     </div>
     <div className={classes.dre}>
         <div className={classes["skill-text"]}>
-            <span>Tailwind</span>
+            <span>FastAPI</span>
             <span className={classes["w-90"]}>90%</span>
         </div>
         <div className={classes["skill-progress"]}>
