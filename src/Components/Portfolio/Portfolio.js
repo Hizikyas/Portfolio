@@ -41,7 +41,10 @@ const Portfolio = () => {
             />
           </div>
 
-          <p className={classes["project-title"]}>Deutsche Hochschule für Medizin College</p>
+          <p className={classes["project-title"]}>
+            Deutsche Hochschule für Medizin College {" "}
+            <span className={classes["sold-badge"]}>SOLD</span>
+          </p>
 
           <div className={classes["btn-container"]}>
             <button className={classes.btn} onClick={() => window.open("https://xn--deutsche-hochschule-fr-medizin-college-17d.tech/" , "_blank")}>Live Demo</button>
