@@ -137,11 +137,17 @@ object-fit:cover;
 }
 
 /* DOTS */
-.dots-container {
+
+/* DOTS - Fixed version */
+.dot-container {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
-    gap: 8px;
+    align-items: center;
+    gap: 12px;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    width: 100%;
+    position: relative;
 }
 
 .dot {
@@ -151,12 +157,21 @@ object-fit:cover;
     background-color: #bbb;
     cursor: pointer;
     transition: all 0.3s ease;
+    border: none;
+    padding: 0;
 }
 
-.activeDot {
+.dot-active {
     background-color: #28A725;
     transform: scale(1.2);
 }
+
+.dot:hover {
+    background-color: #28A725;
+    opacity: 0.7;
+}
+
+
 /* ----------------------------------------------- */
 
 .sold-badge
