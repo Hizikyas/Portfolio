@@ -102,6 +102,63 @@ object-fit:cover;
     padding: 0 1rem;
 }
 
+
+/* ----------------------------------------------- */
+
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* HORIZONTAL SCROLL */
+.project-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem;
+}
+
+/* Hide scrollbar (clean UI) */
+.project-container::-webkit-scrollbar {
+    display: none;
+}
+
+.project-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Prevent shrinking */
+.portfolio-container {
+    min-width: 22rem;
+    flex: 0 0 auto;
+}
+
+/* DOTS */
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.activeDot {
+    background-color: #28A725;
+    transform: scale(1.2);
+}
+/* ----------------------------------------------- */
+
 .sold-badge
 {
     display: inline-block;
