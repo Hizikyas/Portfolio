@@ -55,7 +55,7 @@ const Resume = () => {
               <h3>Deutsche Hochschule für Medizin College</h3>
               <p className={classes["light-title"]}>Frontend Developer | September - December 2025</p>
               <p className={classes.tired}>
-                Currently contributing to a live student management system as a frontend developer, collaborating in a team to build and maintain a role-based platform used in a real college environment.
+                Contributing to a live student management system as a frontend developer, collaborating in a team to build and maintain a role-based platform used in a real college environment.
               </p>
 
           </div>
